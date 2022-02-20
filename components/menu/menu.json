@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_menu_menus",
+  "info": {
+    "name": "menu",
+    "icon": "equals"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logo_text": {
+      "type": "string",
+      "required": true
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-link",
+      "required": true
+    }
+  }
+}
